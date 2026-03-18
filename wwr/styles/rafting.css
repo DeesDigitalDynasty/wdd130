@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #a1f0a1; /* lime green */
-    --secondary-color: #f4a261; /* warm sand */
-    --accent1-color: #1882ac; /* dark slate blue */
+    --primary-color: #010f01; /* lime green */
+    --secondary-color: #312626; /* warm sand */
+    --accent1-color: #ac3618; /* dark slate blue */
     --accent2-color: #ebae14; /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -37,15 +37,19 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
-    background-color: #264653;
+    background-color:var(--accent1-color);
     padding: 12px;
     box-shadow: 0 0 20px grey;
 }
 
-nav, p, section, article {
+nav, p, article {
     margin: 16px;
     padding: 8px;
     
+}
+
+section {
+    color: rgb(13, 14, 14);
 }
 
 .hero {
@@ -67,7 +71,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: white;
     color: var(--secondary-color)
 }
 
