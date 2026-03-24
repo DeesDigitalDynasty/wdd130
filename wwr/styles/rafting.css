@@ -139,7 +139,7 @@ article {
 
 footer {
     align-items: center;
-    border-top: 2px solid var(--accent1-color);
+    border-top: 3px solid var(--accent1-color);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     padding: 1rem;
