@@ -3,10 +3,9 @@
     /* deep river blue */
     --secondary-color: #ffffff;
     /* white */
-    /* --accent1-color: #ac3618;
-    
+    --accent1-color: #ac3618;
+
     --accent2-color: #ebae14;
-     */
 
     --text-color: #222;
 }
@@ -140,7 +139,7 @@ article {
 
 footer {
     align-items: center;
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--accent1-color);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     padding: 1rem;
