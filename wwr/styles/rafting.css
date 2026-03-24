@@ -1,8 +1,12 @@
 :root {
-    --primary-color: #010f01; /* lime green */
-    --secondary-color: #312626; /* warm sand */
-    --accent1-color: #ac3618; /* dark slate blue */
-    --accent2-color: #ebae14; /* light golden yellow */
+    --primary-color: #010f01;
+    /* lime green */
+    --secondary-color: #312626;
+    /* warm sand */
+    --accent1-color: #ac3618;
+    /* dark slate blue */
+    --accent2-color: #ebae14;
+    /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -16,6 +20,48 @@
 header {
     /* background-color: var(--primary-color); */
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    background-color: #ac3618;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    background-color: black;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul li a:hover {
+    color: #ac3618;
+    background-color: white;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
 }
 
 body {
@@ -23,31 +69,32 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-ul li a {
-    text-decoration: none;
-}
-
-
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
-    background-color:var(--accent1-color);
+    background-color: var(--accent1-color);
     padding: 12px;
     box-shadow: 0 0 20px grey;
 }
 
-nav, p, article {
+nav,
+p,
+article {
     margin: 16px;
     padding: 8px;
     color: #010f01;
-    
+
 }
+
 section {
     color: rgb(13, 14, 14);
 }
@@ -87,7 +134,7 @@ h1 {
     position: absolute;
     bottom: 0px;
     padding-left: 10px;
-    
+
 }
 
 .hero article img {
@@ -96,9 +143,30 @@ h1 {
     margin-top: 20px;
 }
 
-.socialmedia img {
-    width: 30px;
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
     height: auto;
+    border: 1px solid #ac3618;
+    margin-top: 10px;
+}
+
+footer {
+    align-items: center;
+    border-top: 2px solid #ac3618;
+    text-align: center;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+
 }
 
 .socialmedia a {
