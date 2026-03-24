@@ -4,24 +4,47 @@
     box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 nav {
     background-color: cornflowerblue;
-    padding: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
 nav a {
-    color: white;
-    padding: 10px;
     display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
-h1 {
-    color: darkslategrey;
+.grid {
+    display: grid;
+    align-items: center;
+    align-items: start;
+
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+main p {
+    padding: 0;
+    text-align: left;
 }
 
 main img {
@@ -43,6 +66,13 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+h1 {
+    color: darkslategrey;
+    border-bottom: 2px solid cornflowerblue;
 }
 
 aside h2 {
@@ -57,14 +87,8 @@ aside img {
     height: auto;
 }
 
-p {
-    padding: 0;
-}
-
 footer {
-    margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
 }
 
 /* Class Selectors */
